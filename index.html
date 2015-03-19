@@ -13,151 +13,120 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 		<script src="data.js"></script>
 		<script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				Skype.ui({
-			      "name": "call",
-			      "element": "SkypeButton_Call_harry2690_1",
-			      "participants": ["harry2690"],
-			      "imageSize": 32
-			    });
-				//$("#blogger_icon_div").height($("#SkypeButton_Call_harry2690_1").height());
-				//$("#blogger_icon_div").css("line-height",$("#SkypeButton_Call_harry2690_1").height());
-			});
-		</script>
-		<style type="text/css">
-			.css_btn_class {
-				font-size:16px;
-				font-family:Arial;
-				font-weight:normal;
-				-moz-border-radius:8px;
-				-webkit-border-radius:8px;
-				border-radius:8px;
-				border:1px solid #dcdcdc;
-				padding:9px 18px;
-				text-decoration:none;
-				background:-moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100% );
-				background:-ms-linear-gradient( top, #f9f9f9 5%, #e9e9e9 100% );
-				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9');
-				background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #f9f9f9), color-stop(100%, #e9e9e9) );
-				background-color:#f9f9f9;
-				color:#666666;
-				display:inline-block;
-				text-shadow:1px 1px 0px #ffffff;
-				-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
-				-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
-				box-shadow:inset 1px 1px 0px 0px #ffffff;
-			}.css_btn_class:hover {
-				background:-moz-linear-gradient( center top, #e9e9e9 5%, #f9f9f9 100% );
-				background:-ms-linear-gradient( top, #e9e9e9 5%, #f9f9f9 100% );
-				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9');
-				background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #e9e9e9), color-stop(100%, #f9f9f9) );
-				background-color:#e9e9e9;
-			}.css_btn_class:active {
-				position:relative;
-				top:1px;
-			}
-		</style>
 	</head>
 
 	<body ng-app="resumeApp" ng-controller="resumeData">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container">
+			<div id="navbar" class="collapse navbar-collapse">
+			  <ul class="nav navbar-nav">
+				<li><a href="javascript:void(0);" ng-click="change('cht');">中文</a></li>
+				<li><a href="javascript:void(0);" ng-click="change('eng');">English</a></li>
+				<li><a href="http://harrywutechnology.blogspot.tw/" target="_blank">Blogger</a></li>
+				<li><a href="skype:echo-chinese;harry2690?call">Skype ME</a></li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		  </div>
+		</nav>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-sm-12" style="text-align: right;">
-					<a href="javascript:void(0);" ng-click="change('cht');" class="css_btn_class">中文</a>
-				</div>
-				<div class="col-lg-6 col-sm-12" style="text-align: left;">
-					<a href="javascript:void(0);" ng-click="change('eng');" class="css_btn_class">English</a>
-				</div>
+				&nbsp;</br>&nbsp;</br>&nbsp;</br>
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-sm-12">
-					<a href="https://www.facebook.com/otters.lin" target="_blank"><img class="img-thumbnail" src="https://graph.facebook.com/100007914550148/picture?type=large" ></a>
+					<img class="img-thumbnail" src="https://graph.facebook.com/harrywu0/picture?type=large" >
 				</div>
 				<div class="col-lg-9 col-sm-12">
 					<div>
 						<h1><span ng-bind="mydata.name"></span></h1>
 					</div>
 					<div>
-						<h2><a href="mailto:{{ mydata.email }}">{{ mydata.email }}</a></h2>
+						<h2><a href="mailto:{{ mydata.email }}"><span ng-bind="mydata.email"></span></a></h2>
 					</div>
 					<div>
-						<h4>{{ mydata.birthday }}</h4>
-					</div>
-					<div class="row">
-						<div class="col-lg-2 col-sm-2" id="SkypeButton_Call_harry2690_1"></div>
-						<div class="col-lg-2 col-sm-2" style="margin: 20px;" id="blogger_icon_div"><a href="http://harrywutechnology.blogspot.tw/" target="_blank"><img class="img-thumbnail" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Blogger.svg/32px-Blogger.svg.png" ></a></div>				
+						<h4><span ng-bind="mydata.birthday"></span></h4>
 					</div>
 				</div>
 			</div>
-			<div class="page-header">
-				<h1>{{ mydata.workExperience.title }}</h1>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 col-sm-12">
-					<table class="table">
-						<thead>
-							<tr>
-								<th>{{ mydata.workExperience.tableHead.companyName }}</th>
-								<th>{{ mydata.workExperience.tableHead.position }}</th>
-								<th>{{ mydata.workExperience.tableHead.period }}</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr ng-repeat="company in mydata.workExperience.value">
-								<td>{{ company.companyName }}</td>
-								<td>{{ company.position }}</td>
-								<td>{{ company.period }}</td>
-							</tr>
-						</tbody>
-					</table>
+			<div ng-if="mydata.workExperience.value.length > 0">
+				<div class="page-header">
+					<h1><span ng-bind="mydata.workExperience.title"></span></h1>
 				</div>
-			</div>
-			<div class="page-header">
-				<h1>{{ mydata.educationalBackground.title }}</h1>
-			</div>
-			<div class="row">
-				<div class="col-lg-12 col-sm-12">
-					<table class="table">
-						<thead>
-							<tr>
-								<th>{{ mydata.educationalBackground.tableHead.schoolName }}</th>
-								<th>{{ mydata.educationalBackground.tableHead.department }}</th>
-								<th>{{ mydata.educationalBackground.tableHead.period }}</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr ng-repeat="school in mydata.educationalBackground.value">
-								<td>{{ school.schoolName }}</td>
-								<td>{{ school.department }}</td>
-								<td>{{ school.period }}</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div class="page-header">
-				<h1>{{ mydata.technology.title }}</h1>
-			</div>
-			<div class="row">
-				<div ng-repeat="technology in mydata.technology.value">
+				<div class="row">
 					<div class="col-lg-12 col-sm-12">
-						<h3>{{ technology.title }}</h3>
-					</div>
-					<div class="col-lg-12 col-sm-12">
-						{{ technology.content }}
+						<table class="table">
+							<thead>
+								<tr>
+									<th><span ng-bind="mydata.workExperience.tableHead.companyName"></span></th>
+									<th><span ng-bind="mydata.workExperience.tableHead.position"></span></th>
+									<th><span ng-bind="mydata.workExperience.tableHead.period"></span></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="company in mydata.workExperience.value">
+									<td>{{ company.companyName }}</td>
+									<td>{{ company.position }}</td>
+									<td>{{ company.period }}</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
-			<div class="page-header">
-				<h1>{{ mydata.projectExperience.title }}</h1>
+			<div ng-if="mydata.educationalBackground.value.length > 0">
+				<div class="page-header">
+					<h1>{{ mydata.educationalBackground.title }}</h1>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-sm-12">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>{{ mydata.educationalBackground.tableHead.schoolName }}</th>
+									<th>{{ mydata.educationalBackground.tableHead.department }}</th>
+									<th>{{ mydata.educationalBackground.tableHead.period }}</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="school in mydata.educationalBackground.value">
+									<td>{{ school.schoolName }}</td>
+									<td>{{ school.department }}</td>
+									<td>{{ school.period }}</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 			</div>
+			<div ng-if="mydata.technology.value.length > 0">
+				<div class="page-header">
+					<h1>{{ mydata.technology.title }}</h1>
+				</div>
+				<div class="row">
+					<div ng-repeat="technology in mydata.technology.value">
+						<div class="col-lg-12 col-sm-12">
+							<h3>{{ technology.title }}</h3>
+						</div>
+						<div class="col-lg-12 col-sm-12">
+							{{ technology.content }}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div ng-if="mydata.projectExperience.value.length > 0">
+				<div class="page-header">
+					<h1>{{ mydata.projectExperience.title }}</h1>
+				</div>
+				<div class="row">
+					<div ng-repeat="projectExperience in mydata.projectExperience.value">
+						<div class="col-lg-12 col-sm-12">
+							<li>{{ projectExperience.experience }}</li>
+						</div>
+					</div>
+				</div>
+				</div>
 			<div class="row">
-				<div ng-repeat="projectExperience in mydata.projectExperience.value">
-					<div class="col-lg-12 col-sm-12">
-						<li>{{ projectExperience.experience }}</li>
-					</div>
-				</div>
+				&nbsp;</br>
 			</div>
 		</div>
 	</body>

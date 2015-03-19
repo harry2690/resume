@@ -116,7 +116,7 @@ languageData.cht = {
 languageData.eng = {
 	name:"Otters Lin",
 	email:"harrywumobile@gmail.com",
-	birthday:"1987/01/05",
+	birthday:"05/01/1987",
 	workExperience:{
 		title:"Work Experience",
 		tableHead:{
