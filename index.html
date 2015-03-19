@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<script src="data.js"></script>
 		<script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
 		<script type="text/javascript">
 			$(function(){
@@ -24,23 +26,22 @@
 		</script>
 	</head>
 
-	<body>
-
+	<body ng-app="resumeApp" ng-controller="resumeData">
+	
     <div class="container">
-
       	<div class="row">
       		<div class="col-lg-3 col-sm-12">
       			<a href="https://www.facebook.com/otters.lin" target="_blank"><img class="img-thumbnail" src="https://graph.facebook.com/100007914550148/picture?type=large" ></a>
       		</div>
       		<div class="col-lg-9 col-sm-12">
       			<div>
-      				<h1>林水獺</h1>
+      				<h1>{{ mydata.name }}</h1>
       			</div>
       			<div>
-      				<h2><a href="mailto:harrywumobile@gmail.com">harrywumobile@gmail.com</a></h2>
+      				<h2><a href="mailto:{{ mydata.email }}">{{ mydata.email }}</a></h2>
       			</div>
       			<div>
-      				<h4>1987/01/05</h4>
+      				<h4>{{ mydata.birthday }}</h4>
       			</div>
 				<div class="row">
 					<div class="col-lg-2 col-sm-2" id="SkypeButton_Call_harry2690_1"></div>
@@ -62,21 +63,11 @@
 		              	</tr>
 	            	</thead>
 	            	<tbody>
-		              	<tr>
-		                	<td>聯經數位股份有限公司</td>
-		                	<td>程式設計師</td>
-		                	<td>2013/10 ~ now</td>
+		              	<tr ng-repeat="x in mydata.workExperience">
+		                	<td>{{ x.companyName }}</td>
+		                	<td>{{ x.position }}</td>
+		                	<td>{{ x.period }}</td>
 		              	</tr>
-		                <tr>
-		                	<td>經緯數位科技股份有限公司</td>
-		                	<td>程式設計師</td>
-		                	<td>2012/03 ~ 2013/10</td>
-		                </tr>
-		                <tr>
-		                	<td>精誠資訊股份有限公司</td>
-		                	<td>程式設計師</td>
-		                    <td>2011/07 ~ 2012/30</td>
-		                </tr>
 		            </tbody>
 		        </table>
       		</div>
