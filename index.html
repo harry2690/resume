@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
-
 	<head>
+		<meta charset="UTF-8">
 		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<!-- Latest compiled and minified CSS -->
@@ -20,105 +21,105 @@
 			      "participants": ["harry2690"],
 			      "imageSize": 32
 			    });
-				$("#blogger_icon_div").height($("#SkypeButton_Call_harry2690_1").height());
-				$("#blogger_icon_div").css("line-height",$("#SkypeButton_Call_harry2690_1").height());
+				//$("#blogger_icon_div").height($("#SkypeButton_Call_harry2690_1").height());
+				//$("#blogger_icon_div").css("line-height",$("#SkypeButton_Call_harry2690_1").height());
 			});
 		</script>
 	</head>
 
 	<body ng-app="resumeApp" ng-controller="resumeData">
-	
-    <div class="container">
-      	<div class="row">
-      		<div class="col-lg-3 col-sm-12">
-      			<a href="https://www.facebook.com/otters.lin" target="_blank"><img class="img-thumbnail" src="https://graph.facebook.com/100007914550148/picture?type=large" ></a>
-      		</div>
-      		<div class="col-lg-9 col-sm-12">
-      			<div>
-      				<h1>{{ mydata.name }}</h1>
-      			</div>
-      			<div>
-      				<h2><a href="mailto:{{ mydata.email }}">{{ mydata.email }}</a></h2>
-      			</div>
-      			<div>
-      				<h4>{{ mydata.birthday }}</h4>
-      			</div>
-				<div class="row">
-					<div class="col-lg-2 col-sm-2" id="SkypeButton_Call_harry2690_1"></div>
-					<div class="col-lg-2 col-sm-2" style="margin: 20px;" id="blogger_icon_div"><a href="http://harrywutechnology.blogspot.tw/" target="_blank"><img class="img-thumbnail" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Blogger.svg/32px-Blogger.svg.png" ></a></div>				
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-12">
+					<a href="https://www.facebook.com/otters.lin" target="_blank"><img class="img-thumbnail" src="https://graph.facebook.com/100007914550148/picture?type=large" ></a>
 				</div>
-      		</div>
-      	</div>
-        <div class="page-header">
-        	<h1>工作經驗</h1>
-        </div>
-        <div class="row">
-      		<div class="col-lg-12 col-sm-12">
-      			<table class="table">
-		            <thead>
-		              	<tr>
-		                	<th>公司名稱</th>
-		                	<th>職位</th>
-		                	<th>工作期間</th>
-		              	</tr>
-	            	</thead>
-	            	<tbody>
-		              	<tr ng-repeat="company in mydata.workExperience">
-		                	<td>{{ company.companyName }}</td>
-		                	<td>{{ company.position }}</td>
-		                	<td>{{ company.period }}</td>
-		              	</tr>
-		            </tbody>
-		        </table>
-      		</div>
-      	</div>
-      	<div class="page-header">
-        	<h1>學歷</h1>
-        </div>
-      	<div class="row">
-      		<div class="col-lg-12 col-sm-12">
-      			<table class="table">
-		            <thead>
-		              	<tr>
-		                	<th>學校名稱</th>
-		                	<th>科系</th>
-		                	<th>期間</th>
-		              	</tr>
-	            	</thead>
-	            	<tbody>
-		              	<tr ng-repeat="school in mydata.educationalBackground">
-		                	<td>{{ school.schoolName }}</td>
-		                	<td>{{ school.department }}</td>
-		                	<td>{{ school.period }}</td>
-		              	</tr>
-		            </tbody>
-		        </table>
-      		</div>
-      	</div>
-      	<div class="page-header">
-        	<h1>技術</h1>
-        </div>
-        <div class="row">
-			<div ng-repeat="technology in mydata.technology">
-				<div class="col-lg-12 col-sm-12">
-					<h3>{{ technology.title }}</h3>
-				</div>
-				<div class="col-lg-12 col-sm-12">
-					{{ technology.content }}
+				<div class="col-lg-9 col-sm-12">
+					<div>
+						<h1>{{ mydata.name }}</h1>
+					</div>
+					<div>
+						<h2><a href="mailto:{{ mydata.email }}">{{ mydata.email }}</a></h2>
+					</div>
+					<div>
+						<h4>{{ mydata.birthday }}</h4>
+					</div>
+					<div class="row">
+						<div class="col-lg-2 col-sm-2" id="SkypeButton_Call_harry2690_1"></div>
+						<div class="col-lg-2 col-sm-2" style="margin: 20px;" id="blogger_icon_div"><a href="http://harrywutechnology.blogspot.tw/" target="_blank"><img class="img-thumbnail" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Blogger.svg/32px-Blogger.svg.png" ></a></div>				
+					</div>
 				</div>
 			</div>
-        </div>
-        <div class="page-header">
-        	<h1>工作實務經驗</h1>
-        </div>
-        <div class="row">
-			<div ng-repeat="workExperience in mydata.workExperience">
+			<div class="page-header">
+				<h1>{{ mydata.workExperience.title }}</h1>
+			</div>
+			<div class="row">
 				<div class="col-lg-12 col-sm-12">
-					<li>{{ workExperience.experience }}</li>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>{{ mydata.workExperience.tableHead.companyName }}</th>
+								<th>{{ mydata.workExperience.tableHead.position }}</th>
+								<th>{{ mydata.workExperience.tableHead.period }}</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="company in mydata.workExperience.value">
+								<td>{{ company.companyName }}</td>
+								<td>{{ company.position }}</td>
+								<td>{{ company.period }}</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
-        </div>
-  </body>
+			<div class="page-header">
+				<h1>{{ mydata.educationalBackground.title }}</h1>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-sm-12">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>{{ mydata.educationalBackground.tableHead.schoolName }}</th>
+								<th>{{ mydata.educationalBackground.tableHead.department }}</th>
+								<th>{{ mydata.educationalBackground.tableHead.period }}</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="school in mydata.educationalBackground.value">
+								<td>{{ school.schoolName }}</td>
+								<td>{{ school.department }}</td>
+								<td>{{ school.period }}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="page-header">
+				<h1>{{ mydata.technology.title }}</h1>
+			</div>
+			<div class="row">
+				<div ng-repeat="technology in mydata.technology.value">
+					<div class="col-lg-12 col-sm-12">
+						<h3>{{ technology.title }}</h3>
+					</div>
+					<div class="col-lg-12 col-sm-12">
+						{{ technology.content }}
+					</div>
+				</div>
+			</div>
+			<div class="page-header">
+				<h1>{{ mydata.projectExperience.title }}</h1>
+			</div>
+			<div class="row">
+				<div ng-repeat="projectExperience in mydata.projectExperience.value">
+					<div class="col-lg-12 col-sm-12">
+						<li>{{ projectExperience.experience }}</li>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 
 
 </html>
