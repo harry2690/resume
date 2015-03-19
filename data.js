@@ -1,7 +1,7 @@
 var languageData = {};
 
 languageData.cht = {
-	name:"林水獺",
+	name:"吳子欣",
 	email:"harrywumobile@gmail.com",
 	birthday:"1987/01/05",
 	workExperience:{
@@ -114,7 +114,7 @@ languageData.cht = {
 };
 
 languageData.eng = {
-	name:"Otters Lin",
+	name:"Harry Wu",
 	email:"harrywumobile@gmail.com",
 	birthday:"05/01/1987",
 	workExperience:{
