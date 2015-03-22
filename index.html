@@ -1,62 +1,101 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<title>Big Picture by HTML5 UP</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.poptrox.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollex.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+			<link rel="stylesheet" href="css/style-normal.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-		<script src="data.js"></script>
+		<script src="js/data.js"></script>
+		<script>
+			$(function(){
+				Skype.ui({
+				  "name": "call",
+				  "element": "SkypeButton_Call_harry2690_1",
+				  "participants": ["harry2690"],
+				  "imageSize": 32
+				});
+			});
+		</script>
 		<script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
 	</head>
-
 	<body ng-app="resumeApp" ng-controller="resumeData">
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-		  <div class="container">
-			<div id="navbar" class="collapse navbar-collapse">
-			  <ul class="nav navbar-nav">
-				<li><a href="javascript:void(0);" ng-click="change('cht');">中文</a></li>
-				<li><a href="javascript:void(0);" ng-click="change('eng');">English</a></li>
-				<li><a href="http://harrywutechnology.blogspot.tw/" target="_blank">Blogger</a></li>
-				<li><a href="https://github.com/harry2690" target="_blank">GitHub</a></li>
-				<li><a href="skype:echo-chinese;harry2690?call">Skype ME</a></li>
-			  </ul>
-			</div><!--/.nav-collapse -->
-		  </div>
-		</nav>
-		<div class="container">
-			<div class="row">
-				&nbsp;</br>&nbsp;</br>&nbsp;</br>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-sm-12">
-					<img class="img-thumbnail" src="https://graph.facebook.com/harrywu0/picture?type=large" >
+
+		<!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+					<h1 id="logo"><a href="javascript:void(0);" ng-click="change('eng');">English</a>&nbsp;&nbsp;<a href="javascript:void(0);" ng-click="change('cht');">中文</a></h1>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">Into</a></li>
+							<li><a href="#whoIAm"><span ng-bind="mydata.nameMenu"></span></a></li>
+							<li><a href="#workExperience"><span ng-bind="mydata.workExperience.title"></span></a></li>
+							<li><a href="#educationalBackground"><span ng-bind="mydata.educationalBackground.title"></span></a></li>
+							<li><a href="#technology"><span ng-bind="mydata.technology.title"></span></a></li>
+							<li><a href="#projectExperience"><span ng-bind="mydata.projectExperience.title"></span></a></li>
+							<li><a href="#contact"><span ng-bind="mydata.contentMenu"></span></a></li>
+						</ul>
+					</nav>
+
+			</header>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container 75%">
+					<header>
+						<h2>Hey.</h2>
+					</header>
+					<p><span ng-bind="mydata.intoText"></span></p>
+					<footer>
+						<a href="#whoIAm" class="button style2 down">More</a>
+					</footer>
 				</div>
-				<div class="col-lg-9 col-sm-12">
-					<div>
-						<h1><span ng-bind="mydata.name"></span></h1>
-					</div>
-					<div>
-						<h2><a href="mailto:{{ mydata.email }}"><span ng-bind="mydata.email"></span></a></h2>
-					</div>
-					<div>
-						<h4><span ng-bind="mydata.birthday"></span></h4>
-					</div>
+			</section>
+
+		<!-- whoIAm -->
+			<section id="whoIAm" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h3><span ng-bind="mydata.nameTitle"></span></h3>
+					</header>
+					<p><h2><span ng-bind="mydata.name"></span></h2></p>
+					<p><h3><a href="mailto:{{ mydata.email }}" style="color:#0088A8;"><span ng-bind="mydata.email"></span></a></h3></p>
+					<p><h4><span ng-bind="mydata.birthday"></span></h4></p>
 				</div>
-			</div>
-			<div ng-if="mydata.workExperience.value.length > 0">
-				<div class="page-header">
-					<h1><span ng-bind="mydata.workExperience.title"></span></h1>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 col-sm-12">
-						<table class="table">
-							<thead>
+				<a href="#workExperience" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- workExperience -->
+			<section id="workExperience" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2><span ng-bind="mydata.workExperience.title"></span></h2>
+					</header>
+					<table>
+							<thead style="text-align:center;">
 								<tr>
 									<th><span ng-bind="mydata.workExperience.tableHead.companyName"></span></th>
 									<th><span ng-bind="mydata.workExperience.tableHead.position"></span></th>
@@ -65,45 +104,46 @@
 							</thead>
 							<tbody>
 								<tr ng-repeat="company in mydata.workExperience.value">
-									<td>{{ company.companyName }}</td>
-									<td>{{ company.position }}</td>
-									<td>{{ company.period }}</td>
+									<td style="text-align:center;">{{ company.companyName }}</td>
+									<td style="text-align:center;">{{ company.position }}</td>
+									<td style="text-align:center;">{{ company.period }}</td>
 								</tr>
 							</tbody>
 						</table>
-					</div>
 				</div>
-			</div>
-			<div ng-if="mydata.educationalBackground.value.length > 0">
-				<div class="page-header">
-					<h1>{{ mydata.educationalBackground.title }}</h1>
+				<a href="#educationalBackground" class="button style2 down anchored">Next</a>
+			</section>
+			
+		<!-- educationalBackground -->
+			<section id="educationalBackground" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2><span ng-bind="mydata.educationalBackground.title"></span></h2>
+					</header>
+					<table>
+						<thead  style="text-align:center;">
+							<tr>
+								<th>{{ mydata.educationalBackground.tableHead.schoolName }}</th>
+								<th>{{ mydata.educationalBackground.tableHead.department }}</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="school in mydata.educationalBackground.value">
+								<td style="text-align:center;">{{ school.schoolName }}</td>
+								<td style="text-align:center;">{{ school.department }}</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<div class="row">
-					<div class="col-lg-12 col-sm-12">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>{{ mydata.educationalBackground.tableHead.schoolName }}</th>
-									<th>{{ mydata.educationalBackground.tableHead.department }}</th>
-									<th>{{ mydata.educationalBackground.tableHead.period }}</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr ng-repeat="school in mydata.educationalBackground.value">
-									<td>{{ school.schoolName }}</td>
-									<td>{{ school.department }}</td>
-									<td>{{ school.period }}</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-			<div ng-if="mydata.technology.value.length > 0">
-				<div class="page-header">
-					<h1>{{ mydata.technology.title }}</h1>
-				</div>
-				<div class="row">
+				<a href="#technology" class="button style2 down anchored">Next</a>
+			</section>
+			
+			<!-- technology -->
+			<section id="technology" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2><span ng-bind="mydata.technology.title"></span></h2>
+					</header>
 					<div ng-repeat="technology in mydata.technology.value">
 						<div class="col-lg-12 col-sm-12">
 							<h3>{{ technology.title }}</h3>
@@ -113,24 +153,40 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div ng-if="mydata.projectExperience.value.length > 0">
-				<div class="page-header">
-					<h1>{{ mydata.projectExperience.title }}</h1>
-				</div>
-				<div class="row">
+				<a href="#projectExperience" class="button style2 down anchored">Next</a>
+			</section>
+
+			<!-- projectExperience -->
+			<section id="projectExperience" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2><span ng-bind="mydata.projectExperience.title"></span></h2>
+					</header>
 					<div ng-repeat="projectExperience in mydata.projectExperience.value">
 						<div class="col-lg-12 col-sm-12">
 							<li>{{ projectExperience.experience }}</li>
 						</div>
 					</div>
 				</div>
+				<a href="#contact" class="button style2 down anchored">Next</a>
+			</section>
+		
+
+		<!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content container">
+					<header>
+						<h2><span ng-bind="mydata.contentText"></span></h2>
+					</header>
+					<div class="box container 75%">
+						<div id="SkypeButton_Call_harry2690_1"></div>
+						<a href="http://harrywutechnology.blogspot.tw/" target="_blank"><img class="img-thumbnail" style="max-height:32px;" src="http://www.orztw.com/wp-content/uploads/2014/03/Blogger-com-logo.jpg" ></a>				
+					</div>
+					<div class="row">
+						&nbsp;</br>&nbsp;</br>&nbsp;</br>
+					</div>
 				</div>
-			<div class="row">
-				&nbsp;</br>
-			</div>
-		</div>
+			</section>
+
 	</body>
-
-
 </html>

@@ -1,6 +1,9 @@
 var languageData = {};
 
 languageData.cht = {
+	intoText:"歡迎進入我的履歷，看完這個網頁後，您將更加認識我。",
+	nameMenu:"我是誰",
+	nameTitle:"我叫",
 	name:"吳子欣",
 	email:"harrywumobile@gmail.com",
 	birthday:"1987/01/05",
@@ -110,10 +113,15 @@ languageData.cht = {
 				experience:"雲端硬碟儲存系統"
 			}
 		]
-	}
+	},
+	contentMenu:"聯絡方式",
+	contentText:"你可以透過以下方式聯絡我"
 };
 
 languageData.eng = {
+	intoText:"Welcome to my resume web.",
+	nameMenu:"Who I am",
+	nameTitle:"My name is",
 	name:"Harry Wu",
 	email:"harrywumobile@gmail.com",
 	birthday:"05/01/1987",
@@ -223,7 +231,9 @@ languageData.eng = {
 				experience:"EzTocloud Data Backup System"
 			}
 		]
-	}
+	},
+	contentMenu:"Content Me",
+	contentText:"You can content me with"
 };
 
 var app = angular.module('resumeApp', []).controller('resumeData', function($scope) {
