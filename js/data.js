@@ -233,7 +233,7 @@ languageData.eng = {
 		]
 	},
 	contentMenu:"Contact me",
-	contentText:"You can contact me with"
+	contentText:"You can contact me through"
 };
 
 var app = angular.module('resumeApp', []).controller('resumeData', function($scope) {
