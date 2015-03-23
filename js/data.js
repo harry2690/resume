@@ -119,8 +119,8 @@ languageData.cht = {
 };
 
 languageData.eng = {
-	intoText:"Welcome to my resume web.",
-	nameMenu:"Who I am",
+	intoText:"welcome to my reseme web. You will know more about me after your visit.",
+	nameMenu:"Who am I",
 	nameTitle:"My name is",
 	name:"Harry Wu",
 	email:"harrywumobile@gmail.com",
@@ -232,8 +232,8 @@ languageData.eng = {
 			}
 		]
 	},
-	contentMenu:"Content Me",
-	contentText:"You can content me with"
+	contentMenu:"Contact me",
+	contentText:"You can contact me with"
 };
 
 var app = angular.module('resumeApp', []).controller('resumeData', function($scope) {
