@@ -61,7 +61,7 @@ languageData.cht = {
 			},
 			{
 				title:"Framework",
-				content:"Sprint , Hibernate , iBates , LinQ , Maven , Ant"
+				content:"Spring , Hibernate , iBates , LinQ , Maven , Ant"
 			},
 			{
 				title:"版本控管",
@@ -179,7 +179,7 @@ languageData.eng = {
 			},
 			{
 				title:"Framework",
-				content:"Sprint , Hibernate , iBates , LinQ , Maven , Ant"
+				content:"Spring , Hibernate , iBates , LinQ , Maven , Ant"
 			},
 			{
 				title:"Version Control",
