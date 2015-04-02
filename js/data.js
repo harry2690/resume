@@ -238,7 +238,7 @@ languageData.eng = {
 
 var app = angular.module('resumeApp', []).controller('resumeData', function($scope) {
     $scope.mydata = languageData["cht"];
-	$scope.change = function(language) {
-	    $scope.mydata = languageData[language];
+    $scope.change = function(language) {
+    	$scope.mydata = languageData[language];
     };
 });
