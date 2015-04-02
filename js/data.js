@@ -70,7 +70,12 @@ languageData.cht = {
 			{
 				title:"前端技術",
 				content:"Bootstarp , AngularJS , Knockout , Kendo UI , JQuery UI , Struts 2"
-			},
+			}
+		]
+	},
+	technology2:{
+		title:"技術",
+		value:[
 			{
 				title:"資料庫",
 				content:"MySQL , MariaDB , SQL Server , Oracle DB , MongoDB"
@@ -188,7 +193,12 @@ languageData.eng = {
 			{
 				title:"Front-end Framework",
 				content:"Bootstarp , AngularJS , Knockout , Kendo UI , JQuery UI , Struts 2"
-			},
+			}
+		]
+	},
+	technology2:{
+		title:"Technology",
+		value:[
 			{
 				title:"Databases",
 				content:"MySQL , MariaDB , SQL Server , Oracle DB , MongoDB"
