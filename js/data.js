@@ -16,9 +16,14 @@ languageData.cht = {
 		},
 		value:[
 			{
+				companyName:"104人力銀行",
+				position:"程式分析師",
+				period:"2015/04 ~ 至今"
+			},
+			{
 				companyName:"聯經數位股份有限公司",
 				position:"程式設計師",
-				period:"2013/10 ~ 至今"
+				period:"2013/10 ~ 2015/04"
 			},
 			{
 				companyName:"經緯智慧科技股份有限公司",
@@ -139,9 +144,14 @@ languageData.eng = {
 		},
 		value:[
 			{
+				companyName:"104 Corporation",
+				position:"Programmer Analyst",
+				period:"04/2015 ~ now"
+			},
+			{
 				companyName:"udnDigital Co., Ltd.",
 				position:"Programmer",
-				period:"10/2013 ~ now"
+				period:"10/2013 ~ 04/2015"
 			},
 			{
 				companyName:"Universal Intelligent Technology Inc.",
