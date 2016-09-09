@@ -66,7 +66,7 @@ languageData.cht = {
 			},
 			{
 				title:"Framework",
-				content:"Yii , Laravel , Restify , Spring , Hibernate , iBates , LinQ , Maven , Ant"
+				content:"Yii , Laravel , Restify , Flask , Spring , Hibernate , iBates , LinQ , Maven , Ant"
 			},
 			{
 				title:"版本控管",
@@ -194,7 +194,7 @@ languageData.eng = {
 			},
 			{
 				title:"Framework",
-				content:"Yii , Laravel , Restify , Spring , Hibernate , iBates , LinQ , Maven , Ant"
+				content:"Yii , Laravel , Restify ,Flask ,  Spring , Hibernate , iBates , LinQ , Maven , Ant"
 			},
 			{
 				title:"Version Control",
