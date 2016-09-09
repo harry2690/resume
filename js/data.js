@@ -16,9 +16,9 @@ languageData.cht = {
 		},
 		value:[
 			{
-				companyName:"104人力銀行",
-				position:"程式分析師",
-				period:"2015/04 ~ 至今"
+				companyName:"PSYComputing",
+				position:"程式設計師",
+				period:"2015/07 ~ 至今"
 			},
 			{
 				companyName:"聯經數位股份有限公司",
@@ -62,11 +62,11 @@ languageData.cht = {
 		value:[
 			{
 				title:"程式語言",
-				content:"Java , Javascript , Jquery , Node.js , Android , C# , PHP , ActionScript"
+				content:"Node.js , Python , Java , Javascript , Jquery , Node.js , Android , C# , PHP , ActionScript"
 			},
 			{
 				title:"Framework",
-				content:"Spring , Hibernate , iBates , LinQ , Maven , Ant"
+				content:"Yii , Laravel , Restify , Spring , Hibernate , iBates , LinQ , Maven , Ant"
 			},
 			{
 				title:"版本控管",
@@ -144,9 +144,9 @@ languageData.eng = {
 		},
 		value:[
 			{
-				companyName:"104 Corporation",
-				position:"Programmer Analyst",
-				period:"04/2015 ~ now"
+				companyName:"PSYComputing",
+				position:"Programmer",
+				period:"07/2015 ~ now"
 			},
 			{
 				companyName:"udnDigital Co., Ltd.",
@@ -190,11 +190,11 @@ languageData.eng = {
 		value:[
 			{
 				title:"Programming Language",
-				content:"Java , Javascript , Jquery , Node.js , Android , C# , PHP , ActionScript"
+				content:"Node.js , Python , Java , Javascript , Jquery , Node.js , Android , C# , PHP , ActionScript"
 			},
 			{
 				title:"Framework",
-				content:"Spring , Hibernate , iBates , LinQ , Maven , Ant"
+				content:"Yii , Laravel , Restify , Spring , Hibernate , iBates , LinQ , Maven , Ant"
 			},
 			{
 				title:"Version Control",
