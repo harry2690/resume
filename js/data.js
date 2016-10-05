@@ -16,7 +16,7 @@ languageData.cht = {
 		},
 		value:[
 			{
-				companyName:"PSYComputing",
+				companyName:"誠義資訊有限公司",
 				position:"程式設計師",
 				period:"2015/07 ~ 至今"
 			},
@@ -144,7 +144,7 @@ languageData.eng = {
 		},
 		value:[
 			{
-				companyName:"PSYComputing",
+				companyName:"Faithtech",
 				position:"Programmer",
 				period:"07/2015 ~ now"
 			},
