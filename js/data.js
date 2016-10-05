@@ -92,6 +92,10 @@ languageData.cht = {
 			{
 				title:"虛擬機",
 				content:"VMWare , Virtual Box , Xen Server"
+			},
+			{
+				title:"雲端服務",
+				content:"Amazon AWS , IBM Softlayer"
 			}
 		]
 	},
@@ -220,6 +224,10 @@ languageData.eng = {
 			{
 				title:"Virtual Machine",
 				content:"VMWare , Virtual Box , Xen Server"
+			},
+			{
+				title:"Cloud",
+				content:"Amazon AWS , IBM Softlayer"
 			}
 		]
 	},
