@@ -74,7 +74,7 @@ languageData.cht = {
 			},
 			{
 				title:"前端技術",
-				content:"Bootstarp , AngularJS , Knockout , Kendo UI , JQuery UI , Struts 2"
+				content:"Vue.js , Bootstarp , AngularJS , Knockout , Kendo UI , JQuery UI , Struts 2"
 			}
 		]
 	},
@@ -103,16 +103,19 @@ languageData.cht = {
 		title:"實務經驗",
 		value:[
 			{
-				experience:"日盛銀行風控管理系統"
+				experience:"天使投資媒合系統"
 			},
 			{
-				experience:"電子發票中小企業介接系統"
+				experience:"會展科技簽報到系統"
 			},
 			{
-				experience:"地方稅系統再造"
+				experience:"遠通園區行動保全系統"
 			},
 			{
-				experience:"中選會電子投票系統"
+				experience:"遠通園區行動保全系統"
+			},
+			{
+				experience:"2Gto4G補助控管系統"
 			},
 			{
 				experience:"資訊圖表管理系統"
@@ -124,7 +127,7 @@ languageData.cht = {
 				experience:"國發會揪應平台"
 			},
 			{
-				experience:"雲端硬碟儲存系統"
+				experience:".....等共11個專案"
 			}
 		]
 	},
@@ -206,7 +209,7 @@ languageData.eng = {
 			},
 			{
 				title:"Front-end Framework",
-				content:"Bootstarp , AngularJS , Knockout , Kendo UI , JQuery UI , Struts 2"
+				content:"Vue.js , Bootstarp , AngularJS , Knockout , Kendo UI , JQuery UI , Struts 2"
 			}
 		]
 	},
@@ -234,6 +237,18 @@ languageData.eng = {
 	projectExperience:{
 		title:"Project Experience",
 		value:[
+			{
+				experience:"GOTP"
+			},
+			{
+				experience:"Checkin Plus"
+			},
+			{
+				experience:"TPark"
+			},
+			{
+				experience:"2Gto4G Manager System"
+			},
 			{
 				experience:"JihSun International Commercial Bank Co., Ltd. Risk Management System"
 			},
