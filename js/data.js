@@ -156,9 +156,14 @@ languageData.eng = {
 		},
 		value:[
 			{
+				companyName:"FlyingV",
+				position:"Programmer",
+				period:"07/2017 ~ now"
+			},
+			{
 				companyName:"Faithtech",
 				position:"Programmer",
-				period:"07/2015 ~ now"
+				period:"07/2015 ~ 06/2017"
 			},
 			{
 				companyName:"udnDigital Co., Ltd.",
