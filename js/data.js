@@ -16,9 +16,14 @@ languageData.cht = {
 		},
 		value:[
 			{
+				companyName:"FlyingV",
+				position:"程式設計師",
+				period:"2017/07 ~ 至今"
+			},
+			{
 				companyName:"誠義資訊有限公司",
 				position:"程式設計師",
-				period:"2015/07 ~ 至今"
+				period:"2015/07 ~ 2017/06"
 			},
 			{
 				companyName:"聯經數位股份有限公司",
