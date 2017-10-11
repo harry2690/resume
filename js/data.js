@@ -4,7 +4,7 @@ languageData.cht = {
 	intoText:"歡迎進入我的履歷，看完這個網頁後，您將更加認識我。",
 	nameMenu:"我是誰",
 	nameTitle:"我叫",
-	name:"吳子欣",
+	name:"吳允翔",
 	email:"harrywumobile@gmail.com",
 	birthday:"1987/01/05",
 	workExperience:{
