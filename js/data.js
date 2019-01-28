@@ -16,9 +16,9 @@ languageData.cht = {
 		},
 		value:[
 			{
-				companyName:"FlyingV",
-				position:"程式設計師",
-				period:"2017/07 ~ 至今"
+				companyName:"無名雲端有限公司",
+				position:"專案經理",
+				period:"2017/06 ~ 至今"
 			},
 			{
 				companyName:"誠義資訊有限公司",
@@ -156,8 +156,8 @@ languageData.eng = {
 		},
 		value:[
 			{
-				companyName:"FlyingV",
-				position:"Programmer",
+				companyName:"WuMing",
+				position:"roject Manager",
 				period:"07/2017 ~ now"
 			},
 			{
