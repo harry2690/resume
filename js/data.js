@@ -16,9 +16,14 @@ languageData.cht = {
 		},
 		value:[
 			{
+				companyName:"預約科技行銷股份有限公司",
+				position:"程式設計師",
+				period:"2019/11至今"
+			},
+			{
 				companyName:"無名雲端有限公司",
 				position:"專案經理",
-				period:"2017/06 ~ 至今"
+				period:"2017/06 ~ 2019/08"
 			},
 			{
 				companyName:"誠義資訊有限公司",
@@ -67,11 +72,11 @@ languageData.cht = {
 		value:[
 			{
 				title:"程式語言",
-				content:"Node.js , Python , Java , Javascript , Jquery , Node.js , Android , C# , PHP , ActionScript"
+				content:"Node.js, Python, Java, Javascript, Jquery, Node.js, Android, C#, PHP, ActionScript"
 			},
 			{
 				title:"Framework",
-				content:"Yii , Laravel , Restify , Flask , Spring , Hibernate , iBates , LinQ , Maven , Ant"
+				content:"CakePHP, Yii, Laravel, Restify, Flask, Spring, Hibernate, iBates, LinQ, Maven, Ant"
 			},
 			{
 				title:"版本控管",
@@ -88,19 +93,19 @@ languageData.cht = {
 		value:[
 			{
 				title:"資料庫",
-				content:"MySQL , MariaDB , SQL Server , Oracle DB , MongoDB"
+				content:"MySQL ,MariaDB ,SQL Server, Oracle DB, MongoDB, Redis"
 			},
 			{
 				title:"作業系統",
-				content:"CentOS , OS X , Windows , Android , iOS"
+				content:"CentOS , OS X, Windows, Android, iOS"
 			},
 			{
 				title:"虛擬機",
-				content:"VMWare , Virtual Box , Xen Server"
+				content:"VMWare ,Virtual Box ,Xen Server"
 			},
 			{
 				title:"雲端服務",
-				content:"Amazon AWS , IBM Softlayer"
+				content:"Amazon AWS ,IBM Softlayer"
 			}
 		]
 	},
@@ -156,9 +161,14 @@ languageData.eng = {
 		},
 		value:[
 			{
+				companyName:"ezPretty",
+				position:"Programmer",
+				period:"11/2019 ~ now"
+			},
+			{
 				companyName:"WuMing",
-				position:"roject Manager",
-				period:"07/2017 ~ now"
+				position:"Project Manager",
+				period:"07/2017 ~ 08/2019"
 			},
 			{
 				companyName:"Faithtech",
@@ -207,19 +217,19 @@ languageData.eng = {
 		value:[
 			{
 				title:"Programming Language",
-				content:"Node.js , Python , Java , Javascript , Jquery , Node.js , Android , C# , PHP , ActionScript"
+				content:"Node.js, Python, Java, Javascript, Jquery, Node.js, Android, C#, PHP, ActionScript"
 			},
 			{
 				title:"Framework",
-				content:"Yii , Laravel , Restify ,Flask ,  Spring , Hibernate , iBates , LinQ , Maven , Ant"
+				content:"Yii, Laravel, Restify, Flask,  Spring, Hibernate, iBates, LinQ, Maven, Ant"
 			},
 			{
 				title:"Version Control",
-				content:"Team Foundation , SVN , Git"
+				content:"Team Foundation, SVN, Git"
 			},
 			{
 				title:"Front-end Framework",
-				content:"Vue.js , Bootstarp , AngularJS , Knockout , Kendo UI , JQuery UI , Struts 2"
+				content:"Vue.js, Bootstarp, AngularJS, Knockout, Kendo UI, JQuery UI, Struts 2"
 			}
 		]
 	},
@@ -228,19 +238,19 @@ languageData.eng = {
 		value:[
 			{
 				title:"Databases",
-				content:"MySQL , MariaDB , SQL Server , Oracle DB , MongoDB"
+				content:"MySQL, MariaDB, SQL Server, Oracle DB, MongoDB"
 			},
 			{
 				title:"Operating System",
-				content:"CentOS , OS X , Windows , Android , iOS"
+				content:"CentOS, OS X, Windows, Android, iOS"
 			},
 			{
 				title:"Virtual Machine",
-				content:"VMWare , Virtual Box , Xen Server"
+				content:"VMWare, Virtual Box, Xen Server"
 			},
 			{
 				title:"Cloud",
-				content:"Amazon AWS , IBM Softlayer"
+				content:"Amazon AWS, IBM Softlayer"
 			}
 		]
 	},
